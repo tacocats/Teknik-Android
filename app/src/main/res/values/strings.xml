@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Teknik</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_service_upload">Upload</string>
+    <string name="title_service_paste">Paste</string>
+    <string name="title_service_url_shortening">URL Shortening</string>
 </resources>

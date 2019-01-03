@@ -13,12 +13,16 @@ class MainActivity : AppCompatActivity() {
                 message.setText(R.string.title_home)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_dashboard -> {
-                message.setText(R.string.title_dashboard)
+            R.id.navigation_paste -> {
+                message.setText(R.string.title_service_paste)
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_notifications -> {
-                message.setText(R.string.title_notifications)
+            R.id.navigation_upload -> {
+                message.setText(R.string.title_service_upload)
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_url_shortening -> {
+                message.setText(R.string.title_service_url_shortening)
                 return@OnNavigationItemSelectedListener true
             }
         }
