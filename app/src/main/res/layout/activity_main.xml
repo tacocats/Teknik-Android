@@ -8,18 +8,21 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <ViewSwitcher
-            android:id="@+id/main_view_switcher"
+    <ViewFlipper
+            android:id="@+id/main_view_flipper"
             android:layout_width="match_parent"
             android:layout_height="0dp" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/navigation">
-
-        <View android:layout_width="match_parent" android:layout_height="match_parent"
-              android:id="@+id/view_option_news" >
-        </View>
-
-    </ViewSwitcher>
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 layout="@layout/main_view_news"/>
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 layout="@layout/main_view_paste"/>
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 layout="@layout/main_view_upload"/>
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content"
+                 layout="@layout/main_view_url_shortening"/>
+    </ViewFlipper>
 
     <android.support.design.widget.BottomNavigationView
             android:id="@+id/navigation"
